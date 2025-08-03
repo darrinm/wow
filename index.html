@@ -35,6 +35,26 @@
         body { font-family: 'Inter', sans-serif; }
         .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
         .gradient-text { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-wow-text { 
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 25%, #ffffff 50%, #06b6d4 75%, #3b82f6 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            text-shadow: 0 0 30px rgba(251, 191, 36, 0.5), 0 0 60px rgba(59, 130, 246, 0.3);
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+            position: relative;
+        }
+        .hero-wow-text::before {
+            content: 'WOW';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(135deg, #fbbf24 0%, #ffffff 50%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: blur(20px);
+            opacity: 0.7;
+            z-index: -1;
+        }
         .glassmorphism { backdrop-filter: blur(16px) saturate(180%); background-color: rgba(255, 255, 255, 0.25); border: 1px solid rgba(255, 255, 255, 0.125); }
         .animate-float { animation: float 6s ease-in-out infinite; }
         @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
@@ -90,7 +110,7 @@
             <!-- Main Headline -->
             <h1 class="text-6xl md:text-8xl font-black text-white mb-6 leading-tight">
                 The Future is 
-                <span class="block gradient-text bg-white">WOW</span>
+                <span class="block hero-wow-text">WOW</span>
             </h1>
             
             <!-- Subheading -->
