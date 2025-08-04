@@ -55,6 +55,17 @@
             opacity: 0.7;
             z-index: -1;
         }
+        .name-banner { 
+            background: linear-gradient(135deg, #1f2937 0%, #374151 50%, #1f2937 100%);
+            border-bottom: 3px solid #fbbf24;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .name-text {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 25%, #ffffff 50%, #06b6d4 75%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(251, 191, 36, 0.3);
+        }
         .glassmorphism { backdrop-filter: blur(16px) saturate(180%); background-color: rgba(255, 255, 255, 0.25); border: 1px solid rgba(255, 255, 255, 0.125); }
         .animate-float { animation: float 6s ease-in-out infinite; }
         @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
@@ -74,6 +85,18 @@
     </style>
 </head>
 <body class="bg-gray-50 overflow-x-hidden">
+    <!-- Name Banner -->
+    <div class="name-banner py-4 relative z-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="name-text text-3xl md:text-4xl font-black tracking-wide">
+                DARRIN MORRISON
+            </h1>
+            <p class="text-gray-300 text-sm md:text-base mt-1 font-medium">
+                Innovation • Technology • Design
+            </p>
+        </div>
+    </div>
+    
     <!-- Hero Section -->
     <section class="gradient-bg min-h-screen flex items-center justify-center relative overflow-hidden">
         <!-- Background Elements -->
